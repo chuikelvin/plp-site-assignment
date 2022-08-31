@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLP lOGIN</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+    <div class="container login-container">
+        <div class="col-md-6 login-form">
+            <div class="toppart">
+                <a href="index.html"><img src="assets/img/plplogo.png" alt="powerlearnproject logo"></a>
+                <p>POWER LEARN PROJECT</p>
+            </div>
+            <form name="signin" action="home.html" onsubmit="return validate()">
+                <div class="form-group row">
+                    <input type="text" class="form-control col-md-5" placeholder="First name" name="first_name"
+                        required />
+                    <input type="text" class="form-control col-md-5" placeholder="Last name" name="last_name"
+                        required />
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Enter your email" name="email" required />
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter your id number" name="id_number"
+                        required />
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter your age" name="age" />
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter your phone number" name="phone"
+                        required />
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Enter your Password" name="password"
+                        required />
+                </div>
+                <div class="form-group radio-group">
+                    <div>
+                        <input type="radio" id="radio" name="role" value="student" checked>
+                        <label for="student">Student</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="role" value="facilitator">
+                        <label for="student">Facilitator</label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <input type="submit" class="btnSubmit" value="Login" />
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
