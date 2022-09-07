@@ -16,7 +16,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark header">
     <div class="navbarimg">
-      <a href="index.html"><img src="./assets/img/plplogo.png" class="img" alt="powerlearnproject logo"></a>
+      <a href="index.php"><img src="./assets/img/plplogo.png" class="img" alt="powerlearnproject logo"></a>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

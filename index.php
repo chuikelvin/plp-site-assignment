@@ -14,10 +14,10 @@
     <div class="container login-container">
         <div class="col-md-6 login-form">
             <div class="toppart">
-                <a href="index.html"><img src="assets/img/plplogo.png" alt="powerlearnproject logo"></a>
+                <a href="index.php"><img src="assets/img/plplogo.png" alt="powerlearnproject logo"></a>
                 <p>POWER LEARN PROJECT</p>
             </div>
-            <form name="signin" action="home.html" onsubmit="return validate()" method="post">
+            <form name="signin" action="home.php" onsubmit="return validate()" method ="post">
                 <div class="form-group row">
                     <input type="text" class="form-control col-md-5" placeholder="First name" name="first_name"
                         required />

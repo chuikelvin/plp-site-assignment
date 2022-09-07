@@ -17,6 +17,9 @@ function validate() {
         role: document.forms["signin"]["role"].value,
     }
 
+    // document.forms.style['display'] = 'none';
+            // event.preventDefault();/*w  w w.  j av  a2s.c  o  m*/
+
     const subjects = []
     const subjectProgress = []
 
