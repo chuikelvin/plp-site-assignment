@@ -5,15 +5,15 @@ function getRandomInt(min, max) {
 }
 
 function validate() {
-    localStorage.clear();
+    sessionStorage.clear();
     const user = {
         firstname: document.forms["signin"]["first_name"].value,
-        lastname: document.forms["signin"]["last_name"].value,
-        email: document.forms["signin"]["email"].value,
-        id_number: document.forms["signin"]["id_number"].value,
-        age: document.forms["signin"]["age"].value,
-        phone: document.forms["signin"]["phone"].value,
-        password: document.forms["signin"]["password"].value,
+        // lastname: document.forms["signin"]["last_name"].value,
+        // email: document.forms["signin"]["email"].value,
+        // id_number: document.forms["signin"]["id_number"].value,
+        // age: document.forms["signin"]["age"].value,
+        // phone: document.forms["signin"]["phone"].value,
+        // password: document.forms["signin"]["password"].value,
         role: document.forms["signin"]["role"].value,
     }
 
@@ -35,18 +35,18 @@ function validate() {
             let value = getRandomInt(10, 100)
             subjectProgress.push(value)
         }
-        localStorage.setItem('subjects', subjects);
-        localStorage.setItem('progress', subjectProgress);
+        sessionStorage.setItem('subjects', subjects);
+        sessionStorage.setItem('progress', subjectProgress);
     } else if (user.role == "facilitator") {
         subjects.push(getRandomInt(3, 9))
         subjectProgress.push(getRandomInt(3, 9))
-        localStorage.setItem('subjects', subjects);
-        localStorage.setItem('progress', subjectProgress);
+        sessionStorage.setItem('subjects', subjects);
+        sessionStorage.setItem('progress', subjectProgress);
     }
 
     for (var key in user) {
         if (user.hasOwnProperty(key)) {
-            localStorage.setItem(key, user[key]);
+            sessionStorage.setItem(key, user[key]);
         }
     }
     return true;

@@ -2,10 +2,10 @@ const lessons = ['HTML5', 'css3', 'javascript', 'git', 'nodejs', 'react', 'pytho
 
 const lessonTitles = [' introduction', ' variables', ' data types', ' functions', ' if else statements', ' loops (for and while)', ' object oriented programming', 'debugging and code structuring', ' best practices'];
 
-const subjects = stringtoarray(localStorage.getItem('subjects'));
-const subjectPercentages = stringtoarray(localStorage.getItem('progress'));
+const subjects = stringtoarray(sessionStorage.getItem('subjects'));
+const subjectPercentages = stringtoarray(sessionStorage.getItem('progress'));
 const container = document.querySelector('.container1')
-const role = localStorage.getItem('role')
+const role = sessionStorage.getItem('role')
 
 const nameTitle = document.querySelector('.lead')
 let navlink = document.querySelectorAll(".nav-link")
@@ -21,11 +21,11 @@ function stringtoarray(str) {
 }
 
 nameTitle.insertAdjacentHTML('afterbegin', `
-<h1>Welcome back to your ${localStorage.getItem('role')} dashboard ${localStorage.getItem('firstname')}</h1>
+<h1>Welcome back to your ${sessionStorage.getItem('role')} dashboard ${sessionStorage.getItem('firstname')}</h1>
 `);
 
 function signout() {
-    localStorage.clear();
+    sessionStorage.clear();
     window.location.assign("index.html");
 }
 
