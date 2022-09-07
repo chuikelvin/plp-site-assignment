@@ -49,5 +49,6 @@ function validate() {
             sessionStorage.setItem(key, user[key]);
         }
     }
+    location.href = "home.html";
     return true;
 }
